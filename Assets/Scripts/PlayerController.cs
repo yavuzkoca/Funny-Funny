@@ -13,8 +13,10 @@ public class PlayerController : MonoBehaviour {
 	private bool grounded;
 	private bool doubleJumped;
 
+    private Animator anim;
+
 	void Start () {
-		
+        anim = GetComponent<Animator>();
 	}
 
 	void FixedUpdate(){
@@ -26,7 +28,9 @@ public class PlayerController : MonoBehaviour {
 			doubleJumped = false;
 		}
 
-		if (grounded && (Input.GetKeyDown (KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow))) {
+        anim.SetBool("Grounded", grounded);
+        
+		if (grounded && (Input.GetAxis("Jump") > 0) || Input.GetKeyDown(KeyCode.UpArrow)) {
 			Jump ();
 		}
 
@@ -38,10 +42,15 @@ public class PlayerController : MonoBehaviour {
 		if (Input.GetKey (KeyCode.RightArrow)) {
 			GetComponent<Rigidbody2D>().velocity = new Vector2(moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
 		}
+
 		if (Input.GetKey (KeyCode.LeftArrow)) {
 			GetComponent<Rigidbody2D>().velocity = new Vector2(-moveSpeed, GetComponent<Rigidbody2D>().velocity.y);
 		}
-	}
+
+        anim.SetFloat("Speed", Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x));
+
+        
+    }
 
 	public void Jump(){
 		GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);

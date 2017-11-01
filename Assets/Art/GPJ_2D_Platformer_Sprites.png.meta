@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: a859e41a19665bc4c805dfa18c5d75c9
-timeCreated: 1509459075
+timeCreated: 1509563854
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -10,6 +10,8 @@ TextureImporter:
     21300006: GPJ_2D_Platformer_Sprites_1
     21300008: Spikes
     21300010: Spike
+    21300012: Player_Walking_1
+    21300014: Player_Walking_2
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -160,6 +162,34 @@ TextureImporter:
         x: 17
         y: 80
         width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Player_Walking_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 112
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Player_Walking_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 112
+        width: 16
         height: 12
       alignment: 0
       pivot: {x: 0, y: 0}

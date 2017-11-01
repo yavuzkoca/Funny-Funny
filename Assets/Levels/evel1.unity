@@ -2154,6 +2154,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentCheckpoint: {fileID: 1409619091}
+  DeathParticle: {fileID: 1144417946459696, guid: 64bb55c7998579645b52a99881f43c43,
+    type: 2}
+  RespawnParticle: {fileID: 1999971473664202, guid: 8baff4927a1b4184ba70323d74d6846a,
+    type: 2}
+  respawnDelay: 1
 --- !u!1001 &1364337041
 Prefab:
   m_ObjectHideFlags: 0
@@ -2688,6 +2693,7 @@ GameObject:
   - component: {fileID: 2000837937}
   - component: {fileID: 2000837936}
   - component: {fileID: 2000837940}
+  - component: {fileID: 2000837941}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -2807,6 +2813,23 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
+--- !u!95 &2000837941
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2000837935}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 67df157b8ea3bdb4ead0c056d9e293d5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &2023808143
 GameObject:
   m_ObjectHideFlags: 0

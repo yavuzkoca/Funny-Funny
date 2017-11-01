@@ -7,7 +7,12 @@ public class LevelManager : MonoBehaviour {
 
     private PlayerController player;
 
-	void Start () {
+    public GameObject DeathParticle;
+    public GameObject RespawnParticle;
+
+    public float respawnDelay;
+
+    void Start () {
         player = FindObjectOfType<PlayerController>();
 	}
 	
@@ -17,7 +22,21 @@ public class LevelManager : MonoBehaviour {
 
     public void RespawnPlayer()
     {
-        Debug.Log("Player Respawn");
-        player.transform.position = currentCheckpoint.transform.position;
+        StartCoroutine("RespawnPlayerCo");
     }
+
+    public IEnumerator RespawnPlayerCo()
+    {
+        Instantiate(DeathParticle, player.transform.position, player.transform.rotation);
+        player.enabled = false;
+        player.GetComponent<Renderer>().enabled = false;
+        Debug.Log("Player Respawn");
+        yield return new WaitForSeconds(respawnDelay);
+        player.transform.position = currentCheckpoint.transform.position;
+        player.enabled = true;
+        player.GetComponent<Renderer>().enabled = true;
+        Instantiate(RespawnParticle, player.transform.position, player.transform.rotation);
+        
+    }
+
 }
