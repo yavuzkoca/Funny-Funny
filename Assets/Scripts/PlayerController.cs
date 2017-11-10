@@ -19,8 +19,7 @@ public class PlayerController : MonoBehaviour {
     private Animator anim;
 
 	void Start () {
-        anim = GetComponent<Animator>();
-
+        anim = GetComponent<Animator>(); 
     }
 
 	void FixedUpdate(){
@@ -29,12 +28,15 @@ public class PlayerController : MonoBehaviour {
 
 	void Update () {
 
+        bool jumping = false;
+        bool falling = false;
+
         anim.SetBool("Grounded", grounded);
 
         if (grounded)
         {
-            anim.SetBool("Jumping", false);
-            anim.SetBool("Falling", false);
+            jumping = false;
+            falling = false;
         }
         
 		if (grounded && ((Input.GetAxis("Jump") > 0) || Input.GetKeyDown(KeyCode.UpArrow))) {
@@ -66,14 +68,17 @@ public class PlayerController : MonoBehaviour {
 
         if(GetComponent<Rigidbody2D>().velocity.y > 0)
         {
-            anim.SetBool("Jumping", true);
-            anim.SetBool("Falling", false);
+            jumping = true;
+            falling = false;
         }
         else if (GetComponent<Rigidbody2D>().velocity.y < 0)
         {
-            anim.SetBool("Jumping", false);
-            anim.SetBool("Falling", true);
+            jumping = false;
+            falling = true;
         }
+
+        anim.SetBool("isJumping", jumping);
+        anim.SetBool("isFalling", falling);
 
     }
 
