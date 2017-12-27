@@ -66,12 +66,12 @@ public class PlayerController : MonoBehaviour {
 
         anim.SetFloat("Speed", Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x));
 
-        if(GetComponent<Rigidbody2D>().velocity.y > 0)
+        if(!grounded && GetComponent<Rigidbody2D>().velocity.y > 0.3)
         {
             jumping = true;
             falling = false;
         }
-        else if (GetComponent<Rigidbody2D>().velocity.y < 0)
+        else if (!grounded && GetComponent<Rigidbody2D>().velocity.y < -0.3)
         {
             jumping = false;
             falling = true;
