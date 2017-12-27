@@ -17,6 +17,8 @@ public class PlayerController : MonoBehaviour {
     
 
     private Animator anim;
+	public Transform firePoint;
+	public GameObject ninjaStar;
 
 	void Start () {
         anim = GetComponent<Animator>(); 
@@ -39,7 +41,7 @@ public class PlayerController : MonoBehaviour {
             falling = false;
         }
         
-		if (grounded && ((Input.GetAxis("Jump") > 0) || Input.GetKeyDown(KeyCode.UpArrow))) {
+		if (grounded && (Input.GetKeyDown(KeyCode.UpArrow))) {
 			Jump ();
 		}
 
@@ -79,6 +81,10 @@ public class PlayerController : MonoBehaviour {
 
         anim.SetBool("isJumping", jumping);
         anim.SetBool("isFalling", falling);
+		
+		if(Input.GetKeyDown(KeyCode.Space)){
+			Instantiate(ninjaStar, firePoint.position, firePoint.rotation);
+		}
 
     }
 
