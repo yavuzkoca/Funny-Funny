@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController2 : MonoBehaviour {
 
 	public float moveSpeed;
     private float moveVelocity;
@@ -19,9 +19,11 @@ public class PlayerController : MonoBehaviour {
     private Animator anim;
 	public Transform firePoint;
 	public GameObject ninjaStar;
+    public Color red;
 
 	void Start () {
         anim = GetComponent<Animator>(); 
+        // gameObject.GetComponent<Renderer>().material.color = red;
     }
 
 	void FixedUpdate(){
@@ -41,25 +43,25 @@ public class PlayerController : MonoBehaviour {
             falling = false;
         }
         
-		if (grounded && (Input.GetKeyDown(KeyCode.UpArrow))) {
+		if (grounded && (Input.GetKeyDown(KeyCode.E))) {
 			Jump ();
 		}
 
         moveVelocity = 0f;
         Vector3 currentScale = transform.localScale;
 
-        if ((Input.GetKeyDown(KeyCode.LeftArrow) && moveRight) || (Input.GetKeyDown(KeyCode.RightArrow) && !moveRight))
+        if ((Input.GetKeyDown(KeyCode.S) && moveRight) || (Input.GetKeyDown(KeyCode.F) && !moveRight))
         {
             currentScale.x = -currentScale.x;
             transform.localScale = new Vector3(currentScale.x, currentScale.y, currentScale.z);
         }
 
-        if (Input.GetKey (KeyCode.RightArrow)) {
+        if (Input.GetKey (KeyCode.F)) {
             moveVelocity = moveSpeed;
             moveRight = true;
         }
 
-		if (Input.GetKey (KeyCode.LeftArrow)) {
+		if (Input.GetKey (KeyCode.S)) {
             moveVelocity = -moveSpeed;
             moveRight = false;
         }
@@ -82,7 +84,7 @@ public class PlayerController : MonoBehaviour {
         anim.SetBool("isJumping", jumping);
         anim.SetBool("isFalling", falling);
 		
-		if(Input.GetKeyDown(KeyCode.J)){
+		if(Input.GetKeyDown(KeyCode.A)){
 			Instantiate(ninjaStar, firePoint.position, firePoint.rotation);
 		}
 

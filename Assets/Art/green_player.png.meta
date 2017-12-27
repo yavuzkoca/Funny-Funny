@@ -1,9 +1,23 @@
 fileFormatVersion: 2
 guid: 48d3f56f138c0c34980de06d837ee151
-timeCreated: 1510321241
+timeCreated: 1514387464
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: green_player_walk_1
+    21300002: green_player_walk_2
+    21300004: green_player_walk_3
+    21300006: green_player_walk_4
+    21300008: green_player_jump_1
+    21300010: green_player_jump_2
+    21300012: green_player_jump_3
+    21300014: green_player_jump_4
+    21300016: green_player_idle_1
+    21300018: green_player_idle_2
+    21300020: green_player_fall_1
+    21300022: green_player_fall_2
+    21300024: green_player_fall_3
+    21300026: green_player_fall_4
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -32,7 +46,7 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
     wrapU: 1
     wrapV: 1
@@ -40,7 +54,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -76,7 +90,203 @@ TextureImporter:
     overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: green_player_walk_1
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 799
+        width: 226
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: green_player_walk_2
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 799
+        width: 226
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: green_player_walk_3
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 799
+        width: 226
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: green_player_walk_4
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 799
+        width: 226
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: green_player_jump_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 534
+        width: 235
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: green_player_jump_2
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 534
+        width: 235
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: green_player_jump_3
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 540
+        width: 235
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: green_player_jump_4
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 550
+        width: 235
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: green_player_idle_1
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 336
+        width: 226
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: green_player_idle_2
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 336
+        width: 226
+        height: 205
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: green_player_fall_1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 45
+        width: 233
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: green_player_fall_2
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 45
+        width: 233
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: green_player_fall_3
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 45
+        width: 233
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: green_player_fall_4
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 45
+        width: 233
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: 
