@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour {
 	public float moveSpeed;
     private float moveVelocity;
 	public float jumpHeight;
-    private bool moveRight = true;
+    public bool moveRight = true;
 
 	public Transform groundCheck;
 	public float groundCheckRadius;
@@ -20,9 +20,15 @@ public class PlayerController : MonoBehaviour {
 	public Transform firePoint;
 	public GameObject ninjaStar;
 
-	void Start () {
-        anim = GetComponent<Animator>(); 
-    }
+	public KeyCode up;
+	public KeyCode right;
+	public KeyCode left;
+	public KeyCode fire;
+	
+	void Start ()
+	{
+        anim = GetComponent<Animator>();
+	}
 
 	void FixedUpdate(){
 		grounded = Physics2D.OverlapCircle (groundCheck.position, groundCheckRadius, whatIsGround);
@@ -35,31 +41,30 @@ public class PlayerController : MonoBehaviour {
 
         anim.SetBool("Grounded", grounded);
 
-        if (grounded)
-        {
+        if (grounded){
             jumping = false;
             falling = false;
         }
         
-		if (grounded && (Input.GetKeyDown(KeyCode.UpArrow))) {
+		if (grounded && (Input.GetKeyDown(up))) {
 			Jump ();
 		}
 
         moveVelocity = 0f;
         Vector3 currentScale = transform.localScale;
 
-        if ((Input.GetKeyDown(KeyCode.LeftArrow) && moveRight) || (Input.GetKeyDown(KeyCode.RightArrow) && !moveRight))
+        if ((Input.GetKeyDown(left) && moveRight) || (Input.GetKeyDown(right) && !moveRight))
         {
             currentScale.x = -currentScale.x;
             transform.localScale = new Vector3(currentScale.x, currentScale.y, currentScale.z);
         }
 
-        if (Input.GetKey (KeyCode.RightArrow)) {
+        if (Input.GetKey (right)) {
             moveVelocity = moveSpeed;
             moveRight = true;
         }
 
-		if (Input.GetKey (KeyCode.LeftArrow)) {
+		if (Input.GetKey (left)) {
             moveVelocity = -moveSpeed;
             moveRight = false;
         }
@@ -82,7 +87,7 @@ public class PlayerController : MonoBehaviour {
         anim.SetBool("isJumping", jumping);
         anim.SetBool("isFalling", falling);
 		
-		if(Input.GetKeyDown(KeyCode.J)){
+		if(Input.GetKeyDown(fire)){
 			Instantiate(ninjaStar, firePoint.position, firePoint.rotation);
 		}
 

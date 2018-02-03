@@ -5,6 +5,7 @@ using UnityEngine;
 public class KillPlayer : MonoBehaviour {
 
     public LevelManager levelManager;
+    public LevelManager2 levelManager2;
 
     void Start () {
         levelManager = FindObjectOfType<LevelManager>();
@@ -18,6 +19,9 @@ public class KillPlayer : MonoBehaviour {
     {
         if (other.name == "Player"){
             levelManager.RespawnPlayer();
+        }
+        if (other.name == "Player2"){
+            levelManager2.RespawnPlayer();    
         }
     }
 }

@@ -5,18 +5,18 @@ using UnityEngine;
 public class NinjaStarController : MonoBehaviour {
 
 	public float speed;
-	public PlayerController player;
+	public GameObject player;
     public GameObject enemyDeathEffect;
     public GameObject impactEffect;
 
     public int pointsForKill;
 	
 	void Start () {
-		player = FindObjectOfType<PlayerController>();
-
-        if (player.transform.localScale.x < 0){
+		player = GameObject.FindGameObjectWithTag("Player");
+		PlayerController playerController = player.GetComponent<PlayerController>();
+		if (!playerController.moveRight){
             speed = -speed;
-        }
+		}
 	}
 	
 	

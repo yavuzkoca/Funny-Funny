@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Monster\.Rider2017.3\system\resharper-host\local\Transient\ReSharperHost\v11\SolutionCaches\_tutorial.1349763430.00" t="ExcludeRecursive" />
+    <e p="D:\PC\Unity\tutorial" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Plugins" t="Include">
+          <e p="Editor" t="Include">
+            <e p="JetBrains" t="Include">
+              <e p="Unity3DRider.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="Checkpoint.cs" t="Include" />
+          <e p="CoinPickup.cs" t="Include" />
+          <e p="DestroyFinishedParticle.cs" t="Include" />
+          <e p="EnemyPatrol.cs" t="Include" />
+          <e p="FreezeRotate.cs" t="Include" />
+          <e p="KillPlayer.cs" t="Include" />
+          <e p="LevelManager.cs" t="Include" />
+          <e p="LevelManager2.cs" t="Include" />
+          <e p="NinjaStarController.cs" t="Include" />
+          <e p="NinjaStarController2.cs" t="Include" />
+          <e p="PlayerController.cs" t="Include" />
+          <e p="PlayerController2.cs" t="Include" />
+          <e p="ScoreManager.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+      <e p="tutorial.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>

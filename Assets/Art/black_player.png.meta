@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 175e8fb309708fd4797ff6841c3221ca
-timeCreated: 1510324814
-licenseType: Free
+timeCreated: 1517681925
+licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
     21300000: black_player_walk_1
@@ -79,6 +79,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    androidETC2FallbackOverride: 0
   - buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -88,6 +89,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -103,7 +105,16 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 41, y: 84.5}
+        - {x: -43, y: 84.5}
+        - {x: -100, y: 63.5}
+        - {x: -100, y: -68.5}
+        - {x: -94, y: -95.5}
+        - {x: 24, y: -95.5}
+        - {x: 73, y: -64.5}
+        - {x: 73, y: 60.5}
+        - {x: 71, y: 67.5}
       tessellationDetail: 0
     - serializedVersion: 2
       name: black_player_walk_2
@@ -117,7 +128,15 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -54, y: 84.5}
+        - {x: -97, y: 69.5}
+        - {x: -97, y: -41.5}
+        - {x: -81, y: -95.5}
+        - {x: 33, y: -95.5}
+        - {x: 78, y: -82.5}
+        - {x: 78, y: 78.5}
+        - {x: 70, y: 84.5}
       tessellationDetail: 0
     - serializedVersion: 2
       name: black_player_walk_3
@@ -131,7 +150,16 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -24, y: 85.5}
+        - {x: -55, y: 74.5}
+        - {x: -80, y: 60.5}
+        - {x: -95, y: 10.5}
+        - {x: -95, y: -51.5}
+        - {x: -50, y: -95.5}
+        - {x: 76, y: -95.5}
+        - {x: 76, y: 75.5}
+        - {x: 54, y: 85.5}
       tessellationDetail: 0
     - serializedVersion: 2
       name: black_player_walk_4
@@ -145,7 +173,18 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 52, y: 84.5}
+        - {x: -40, y: 84.5}
+        - {x: -67, y: 67.5}
+        - {x: -94, y: 7.5}
+        - {x: -94, y: -30.5}
+        - {x: -93, y: -35.5}
+        - {x: -55, y: -93.5}
+        - {x: 49, y: -93.5}
+        - {x: 81, y: -71.5}
+        - {x: 81, y: 68.5}
+        - {x: 77, y: 76.5}
       tessellationDetail: 0
     - serializedVersion: 2
       name: black_player_jump_1
@@ -159,21 +198,40 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 64.5, y: 89.5}
+        - {x: -33.5, y: 89.5}
+        - {x: -78.5, y: 70.5}
+        - {x: -78.5, y: -46.5}
+        - {x: -36.5, y: -83.5}
+        - {x: 73.5, y: -83.5}
+        - {x: 86.5, y: -46.5}
+        - {x: 86.5, y: 56.5}
+        - {x: 78.5, y: 83.5}
       tessellationDetail: 0
     - serializedVersion: 2
       name: black_player_jump_2
       rect:
         serializedVersion: 2
-        x: 259
-        y: 534
+        x: 267
+        y: 545
         width: 235
         height: 203
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -10.5, y: 100.5}
+        - {x: -39.5, y: 96.5}
+        - {x: -73.5, y: 36.5}
+        - {x: -73.5, y: -28.5}
+        - {x: -34.5, y: -79.5}
+        - {x: 23.5, y: -79.5}
+        - {x: 64.5, y: -62.5}
+        - {x: 80.5, y: -4.5}
+        - {x: 80.5, y: 60.5}
+        - {x: 58.5, y: 100.5}
       tessellationDetail: 0
     - serializedVersion: 2
       name: black_player_jump_3
@@ -187,7 +245,23 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 3.5, y: 101.5}
+        - {x: -18.5, y: 98.5}
+        - {x: -31.5, y: 91.5}
+        - {x: -76.5, y: 54.5}
+        - {x: -76.5, y: -53.5}
+        - {x: -49.5, y: -85.5}
+        - {x: -21.5, y: -85.5}
+        - {x: -20.5, y: -76.5}
+        - {x: -11.5, y: -71.5}
+        - {x: -13.5, y: -71.5}
+        - {x: -12.5, y: -77.5}
+        - {x: -8.5, y: -85.5}
+        - {x: 27.5, y: -85.5}
+        - {x: 76.5, y: -22.5}
+        - {x: 76.5, y: 73.5}
+        - {x: 38.5, y: 101.5}
       tessellationDetail: 0
     - serializedVersion: 2
       name: black_player_jump_4
@@ -201,7 +275,19 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -51.5, y: 93.5}
+        - {x: -82.5, y: 56.5}
+        - {x: -82.5, y: -36.5}
+        - {x: -61.5, y: -60.5}
+        - {x: -49.5, y: -59.5}
+        - {x: -44.5, y: -75.5}
+        - {x: -36.5, y: -85.5}
+        - {x: -12.5, y: -90.5}
+        - {x: 45.5, y: -90.5}
+        - {x: 69.5, y: 1.5}
+        - {x: 69.5, y: 86.5}
+        - {x: 41.5, y: 93.5}
       tessellationDetail: 0
     - serializedVersion: 2
       name: black_player_fall_1
@@ -215,7 +301,14 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -69.5, y: 93}
+        - {x: -89.5, y: 49}
+        - {x: -89.5, y: -59}
+        - {x: -62.5, y: -85}
+        - {x: 77.5, y: -85}
+        - {x: 77.5, y: 60}
+        - {x: 31.5, y: 93}
       tessellationDetail: 0
     - serializedVersion: 2
       name: black_player_fall_2
@@ -229,7 +322,16 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 26.5, y: 87}
+        - {x: -86.5, y: 87}
+        - {x: -93.5, y: 77}
+        - {x: -93.5, y: -48}
+        - {x: -71.5, y: -96}
+        - {x: 48.5, y: -96}
+        - {x: 65.5, y: -64}
+        - {x: 65.5, y: 19}
+        - {x: 51.5, y: 80}
       tessellationDetail: 0
     - serializedVersion: 2
       name: black_player_fall_3
@@ -243,7 +345,16 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -61.5, y: 101}
+        - {x: -79.5, y: 61}
+        - {x: -79.5, y: -66}
+        - {x: -41.5, y: -98}
+        - {x: 28.5, y: -98}
+        - {x: 61.5, y: -91}
+        - {x: 82.5, y: -82}
+        - {x: 82.5, y: 7}
+        - {x: 41.5, y: 101}
       tessellationDetail: 0
     - serializedVersion: 2
       name: black_player_fall_4
@@ -257,7 +368,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 16.5, y: 101}
+        - {x: -39.5, y: 101}
+        - {x: -85.5, y: 71}
+        - {x: -85.5, y: -23}
+        - {x: -48.5, y: -94}
+        - {x: -22.5, y: -97}
+        - {x: 54.5, y: -97}
+        - {x: 70.5, y: -80}
+        - {x: 70.5, y: -15}
+        - {x: 45.5, y: 67}
       tessellationDetail: 0
     - serializedVersion: 2
       name: black_player_idle_1
@@ -271,7 +392,17 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: 31, y: 55.5}
+        - {x: -66, y: 55.5}
+        - {x: -101, y: 27.5}
+        - {x: -101, y: -69.5}
+        - {x: -58, y: -97.5}
+        - {x: 17, y: -97.5}
+        - {x: 45, y: -85.5}
+        - {x: 54, y: -63.5}
+        - {x: 54, y: 10.5}
+        - {x: 45, y: 44.5}
       tessellationDetail: 0
     - serializedVersion: 2
       name: black_player_idle_2
@@ -285,7 +416,23 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -42, y: 58.5}
+        - {x: -52, y: 50.5}
+        - {x: -86, y: 23.5}
+        - {x: -94, y: 5.5}
+        - {x: -94, y: 4.5}
+        - {x: -94, y: 6.5}
+        - {x: -96, y: 8.5}
+        - {x: -99, y: 8.5}
+        - {x: -102, y: 6.5}
+        - {x: -102, y: -49.5}
+        - {x: -91, y: -88.5}
+        - {x: -81, y: -102.5}
+        - {x: 37, y: -102.5}
+        - {x: 56, y: -98.5}
+        - {x: 56, y: -0.5}
+        - {x: 26, y: 58.5}
       tessellationDetail: 0
     outline: []
     physicsShape: []
